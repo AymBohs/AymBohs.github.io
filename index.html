@@ -6,7 +6,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Business Analytics and Software Development Portfolio</title>
-
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+  rel="stylesheet"
+/>
     <style>
       /* ============================================================
        BASIC STYLES — students can tweak colors/fonts here
@@ -18,9 +21,9 @@
       }
 
       body {
-        font-family: Arial, Helvetica, sans-serif;
-        color: #222;
-        background: #f7f7f7;
+        font-family: "Inter", Helvetica, sans-serif;
+        color: #3d5754;
+        background: #e8f0ef;
         line-height: 1.5;
       }
 
@@ -41,13 +44,13 @@
         width: 140px;
         height: 140px;
         border-radius: 50%;
-        background: #ddd;
-        border: 2px dashed #aaa;
+        background: #e8f0ef;
+        border: 3px #3d5754;
         margin: 0 auto 16px;
         display: flex;
         align-items: center;
         justify-content: center;
-        color: #888;
+        color: #3d5754;
         font-size: 13px;
       }
 
@@ -57,7 +60,7 @@
       } /* NAME */
       header p {
         font-size: 16px;
-        color: #555;
+        color: #527571;
       } /* EXPERIENCES */
 
       /* ---------- TABS ---------- */
@@ -69,18 +72,20 @@
       }
 
       .tab-button {
+        font-family: "Inter", Helvetica, sans-serif;
         padding: 10px 22px;
-        border: 1px solid #ccc;
-        background: #fff;
+        border: 1px solid #e8f0ef;
+        color: #465b58;
+        background: #becdcb;
         cursor: pointer;
         font-size: 15px;
         border-radius: 4px;
       }
 
       .tab-button.active {
-        background: #2c3e50;
+        background: #465b58;
         color: #fff;
-        border-color: #2c3e50;
+        border-color: #e8f0ef;
       }
 
       /* ---------- TAB CONTENT ---------- */
@@ -96,6 +101,10 @@
         border: 1px solid #eee;
         border-radius: 6px;
         padding: 24px;
+      }
+
+      .panel p {
+        margin-bottom: 20px;
       }
 
       /* ---------- PROJECT CARDS (1 x 3 grid) ---------- */
@@ -115,13 +124,13 @@
       /* Empty space for project photo */
       .card-photo {
         height: 120px;
-        background: #ddd;
-        border-bottom: 1px dashed #aaa;
+        background: #527571;
+        border-bottom: 1px #527571;
         display: flex;
         align-items: center;
         justify-content: center;
-        color: #888;
-        font-size: 12px;
+        color: #e8f0ef;
+        font-size: 17px;
       }
 
       .card-text {
@@ -133,7 +142,7 @@
       }
       .card-text p {
         font-size: 14px;
-        color: #555;
+        color: #527571;
       }
 
       /* ---------- MOBILE: stack cards vertically ---------- */
@@ -152,10 +161,10 @@
          ============================================================ -->
       <header>
         <!-- Replace this div with <img src="your-photo.jpg" class="photo"> -->
-        <div class="photo">Photo</div>
+        <img src="suit pic 2 cropped.jpg" class="photo">
 
         <h1>Ayman Bohsali</h1>
-        <p>Business Analyst · SQL · Python · Tableau</p>
+        <p>Business Analyst · SQL · Python · Java</p>
       </header>
 
       <!-- ============================================================
@@ -173,40 +182,56 @@
       <!-- ---------- TAB 1: ABOUT ME ---------- -->
       <div id="about" class="tab-content active">
         <div class="panel">
+          <h2>About Me</h2>
+
           <p>
-            Write a short introduction about yourself here — your background,
-            skills, and what kind of business analytics role you're looking for.
+            I am a candidate for the Masters of Management in Analytics at McGill University 
+            interested in software development, business analytics, and artificial
+            intelligence.
           </p>
+          <h2>Skills</h2>
+
+          <p>
+            Java · Python · SQL · Machine Learning · Git · Data Analysis
+          </p>
+
+          <h2>Education</h2>
+
+          <p>Bachelor of Computer Science — Concordia University
+            <br>
+            Masters of Management in Analytics — McGill University</p>
+          
         </div>
       </div>
 
       <!-- ---------- TAB 2: PROJECTS ---------- -->
       <div id="projects" class="tab-content">
         <div class="cards">
-          <!-- CARD 1 -->
+
+                    <!-- CARD 2 -->
           <div class="card">
-            <div class="card-photo">Project Image</div>
+            <div class="card-photo">November 2025</div>
             <div class="card-text">
-              <h3>Project Title</h3>
-              <p>Short description of what you did and the tools you used.</p>
+              <h3>Biotrove Images Clustering</h3>
+              <p>Worked on an unsupervised deep learning model clustering biotrove images by family, species, and subspecies.</p>
             </div>
           </div>
 
-          <!-- CARD 2 -->
+          <!-- CARD 1 -->
           <div class="card">
-            <div class="card-photo">Project Image</div>
+            <div class="card-photo">May 2025</div>
             <div class="card-text">
-              <h3>Project Title</h3>
-              <p>Short description of what you did and the tools you used.</p>
+              <h3>Football Market Value Predictor</h3>
+              <p>Created a machine learning model in Python, predicting football players' market value based on three seasons of stats.</p>
             </div>
           </div>
 
           <!-- CARD 3 -->
           <div class="card">
-            <div class="card-photo">Project Image</div>
+            <div class="card-photo">March 2024</div>
             <div class="card-text">
-              <h3>Project Title</h3>
-              <p>Short description of what you did and the tools you used.</p>
+              <h3>Python Web Scraping for Deals</h3>
+              <p>Used BeautifulSoup to extract and analyze online deals with user-friendly menu options for display, categorization, and logging.</p>
             </div>
           </div>
         </div>
